@@ -58,11 +58,12 @@ const OrderCard = ({ order }) => {
               {order.item.map((item, i) => (
                 <div key={i}>
                   <Link className="link" to={`/order-details/${order.id}`}>
+                    <p> Click here to se details</p>
                     <img src={item.imageURL} alt={item.name} />
-                    <p>Name: {item.name}</p>
-                    <p>Price: {item.price} kr</p>
-                    <p>Quantity: {item.quantity}</p>
-                    <p>Size: {item.size}</p>
+                    <p className='description'>Name: {item.name}</p>
+                    <p className='description'>Price: {item.price} kr</p>
+                    <p className='description'>Quantity: {item.quantity}</p>
+                    <p className='description'>Size: {item.size}</p>
                   </Link>
                 </div>
               ))}

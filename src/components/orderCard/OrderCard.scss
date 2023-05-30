@@ -49,6 +49,11 @@
         color: red;
       }
     }
+    .link{ 
+      text-decoration: none;
+      color:black;
+      cursor: pointer;
+    }
   }
 
   .right_box {
@@ -105,4 +110,8 @@
 .order_item:hover {
   background-color: #efefef;
   padding-right: 3rem;
+}
+
+.description {
+  text-decoration: none;
 }
