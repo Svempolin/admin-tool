@@ -6,13 +6,9 @@ import { useNavigate } from 'react-router-dom'
 const AddProduct = () => {
   
   const { admin } = useSelector(state => state.auth)
+  // const [submitted, setSubmitted] = useState(false)
   const navigate = useNavigate()
-
-  // useEffect(() => {
-  //   if (!user) {
-  //     navigate('/login-admin')
-  //   }
-  // }, [user])
+  
 
   useEffect(() => {
     if (!admin) {
@@ -37,7 +33,7 @@ const AddProduct = () => {
       }
     })
   }
-
+  // +productData.price converts a string to a number, only reason why we are doing the data object
   const handleSubmit = (e) => {
     e.preventDefault()
     const data = {
